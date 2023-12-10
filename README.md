@@ -1,8 +1,8 @@
 ## Inspiration
-I tried GHW's Twilio challenge in which you have to use Twilio's SendGrid API to send email.
+I tackled the GHW's Twilio challenge, where the task was to leverage the SendGrid API to send personalized emails.
 
 ## What it does
-It sends email that contain a photo of Mars planet taken by NASA's rover. 
+It sends personalized emails featuring photos of Mars captured by specific NASA rovers, like Curiosity or Perseverance.
 
 ## How to run
 1. Clone this repo 
@@ -13,18 +13,19 @@ It sends email that contain a photo of Mars planet taken by NASA's rover.
 6. Run **node index.js** 
 
 ## How we built it
-I integrated NASA's API using node-fetch to fetch image URL and  used SendGrid module to send email to other person.
+I leveraged node-fetch to integrate NASA's API and extract image URLs, subsequently utilizing SendGrid to send emails containing these Martian marvels.
 
 ## Challenges we ran into
-Two challenges which I ran into while doing this:
-1. I didn't understand how to use SendGrid module but after which I googled it and looked on its documentation through which I learnt how to SendGrid module.
-2. After integrating SendGrid module, I tried integrating NASA's API but on first call it send me 1000 photo. First, I didn't understand by it send me 1000 photos. After looking at its documentation I understand that by default it sends me 1000 photo after apply some filters I can obtain about 25 photos per call. After which I selected one photo and send it to sender's mail
+While tackling this project, I faced two primary challenges:
+
+Unfamiliarity with the SendGrid module: Initially, I struggled to understand its functionality. However, through dedicated research and consultation of the SendGrid documentation, I acquired the necessary knowledge to utilize it effectively.
+Unexpected API response: Upon integrating the NASA API, it initially returned an overwhelming 1000 photos. After thorough examination of its documentation, I discovered that this was the default behavior. By applying specific filters, I successfully reduced the response to a manageable 25 photos, allowing me to select and send the desired image to the recipient's email.
 
 ## Accomplishments that we're proud of
-I am glad that now I know how to integrate NASA's API and can use SendGrid module.
+I'm thrilled to have mastered the integration of NASA's API and SendGrid module! These skills unlock exciting possibilities for future projects. The NASA API grants access to a vast trove of data and imagery directly from space exploration missions, while SendGrid empowers me to leverage robust email functionalities.  I'm eager to explore what I can build next with this powerful combination.
 
 ## What we learned
-I was able learn how to use documentation, how to use SendGrid module and how to integrate API's.
+This project allowed me to learn how to use documentation, master the SendGrid module, and successfully integrate APIs. This knowledge will be invaluable as I continue to develop my skills and embark on new projects.
 
 ## What's next for Get Mars photo taken by NASA's rover
-You can add front end and can to select many more photos and of which camera you want.
+You can add a front-end interface to select multiple photos and choose the camera you want.
