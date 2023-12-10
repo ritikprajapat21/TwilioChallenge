@@ -6,10 +6,11 @@ It sends email that contain a photo of Mars planet taken by NASA's rover.
 
 ## How to run
 1. Clone this repo 
-2. Create an account on twilio and create a api key [Twilio])(https://app.sendgrid.com/settings/api_keys)
-3. Paste api key in .env file with name **SENDGRID_API_KEY** and also write email you used to create sendgrid in **from_email**
+2. Create an account on twilio and create a api key [Twilio](https://app.sendgrid.com/settings/api_keys)
+3. Paste above api key in .env file with name **SENDGRID_API_KEY** and also write email you used to create sendgrid in **from_email**
 4. Also, paste **NASA_API_KEY=DEMO_KEY**
-5. Run **node index.js** 
+5. Now before running, run **npm i**
+6. Run **node index.js** 
 
 ## How we built it
 I integrated NASA's API using node-fetch to fetch image URL and  used SendGrid module to send email to other person.
